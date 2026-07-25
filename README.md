@@ -47,3 +47,4 @@ Opens at **http://localhost:5173**.
 - Order status doesn't auto-refresh — reload the order detail page to see updates after changing
   status via the API. Polling or WebSockets would be a natural next step.
 # food-delivery-system
+# food-delivery-frontend
