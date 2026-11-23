@@ -3,7 +3,7 @@ import axios from 'axios';
 // Everything goes through the API Gateway on 8080 — the frontend never
 // talks to user-service/restaurant-service/order-service directly.
 const client = axios.create({
-  baseURL: 'http://localhost:8080',
+  baseURL: import.meta.env.VITE_API_URL || "http://localhost:8080",
 });
 
 client.interceptors.request.use((config) => {
